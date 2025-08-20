@@ -16,5 +16,19 @@
     {% if mensagem %}
         <p>{{ mensagem }}</p>
     {% endif %}
+
+    <!-- NOVO BLOCO PARA EXIBIR AS TAREFAS -->
+    <h2>Tarefas Atuais</h2>
+    {% if tarefas %}
+        <ul>
+            {% for tarefa in tarefas %}
+                <li>{{ tarefa }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Nenhuma tarefa na lista ainda.</p>
+    {% endif %}
+    <!-- FIM DO NOVO BLOCO -->
+
 </body>
 </html>
